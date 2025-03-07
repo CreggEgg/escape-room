@@ -1,0 +1,10 @@
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+div#log {
+	display: flex;
+	flex-direction: column;
+}
