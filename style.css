@@ -2,9 +2,21 @@
 body {
 	display: flex;
 	flex-direction: column;
+	background-image: radial-gradient(
+    rgba(0, 150, 0, 0.75), black 120%);
+	height: 100vh;
+	font: 1rem Inconsolata, monospace;
 }
 
 div#log {
 	display: flex;
 	flex-direction: column;
+	color: white;
+	text-shadow: 0 0 5px #C8C8C8;
 }
+
+input#tinput {
+	background-color: rgb(0,0,0,0);
+	border: none
+}
+
