@@ -82,4 +82,5 @@ function changeLast(msg) {
 		alert(e)
 	}
 }
+log("Enter the password >")
 refocus()
