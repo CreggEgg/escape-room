@@ -13,6 +13,13 @@ div#log {
 	flex-direction: column;
 	color: white;
 	text-shadow: 0 0 5px #C8C8C8;
+	position: relative;
+	justify-content: end;
+	height: 95%;
+	
+}
+div#log > p {
+	margin: 5px; 
 }
 
 input#tinput {
@@ -20,5 +27,9 @@ input#tinput {
 	border: none;
 	position: absolute;
 	bottom: 0;
+	display: table-cell;
+	color: white;
+	text-shadow: 0 0 5px #C8C8C8;
+
 }
 
