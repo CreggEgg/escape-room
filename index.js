@@ -1,4 +1,5 @@
 const code = "PASSWORD"
+let downloaded = false
 
 document.querySelector("#tinput").focus({
 	focusVisible: false
@@ -12,7 +13,20 @@ function refocus() {
 }
 document.querySelector("#tinput").addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
-		if (event.target.value == code) {
+		if (downloaded) {
+			if (event.target.value == "y") {
+				try {
+					window.location.replace("video.html")
+
+				} catch(e) {
+					alert(e)
+				}
+			}
+			if (event.target.value != "y") {
+				log("Alright we get it you're very funny please just type y.")
+			}
+
+		} else if (event.target.value == code) {
 			
 			log("Successful log in")
 			setTimeout(() => {
@@ -24,18 +38,22 @@ document.querySelector("#tinput").addEventListener("keyup", function(event) {
 						}, i * 50);
 					}
 					setTimeout(() => {
-						try {
-							window.location.replace("video.html")
-
-						} catch(e) {
-							alert(e)
-						}
+						log("Download complete")
+						log("Open video [y/n]")
+						downloaded = true;
+						// try {
+						// 	window.location.replace("video.html")
+						//
+						// } catch(e) {
+						// 	alert(e)
+						// }
 					}, 105 * 50);
 			}, 100)
 
 		} else {
 			log("Incorrect password")
 		}
+		event.target.value = ""
 
     }
 });
