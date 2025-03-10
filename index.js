@@ -1,4 +1,15 @@
 const code = "PASSWORD"
+
+document.querySelector("#tinput").focus({
+	focusVisible: false
+})
+
+function refocus() {
+	document.querySelector("#tinput").focus({
+		focusVisible: false
+	})
+	requestAnimationFrame(refocus)
+}
 document.querySelector("#tinput").addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
 		if (event.target.value == code) {
@@ -53,3 +64,4 @@ function changeLast(msg) {
 		alert(e)
 	}
 }
+refocus()
