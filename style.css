@@ -17,6 +17,8 @@ div#log {
 
 input#tinput {
 	background-color: rgb(0,0,0,0);
-	border: none
+	border: none;
+	position: absolute;
+	bottom: 0;
 }
 
