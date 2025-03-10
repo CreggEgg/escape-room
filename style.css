@@ -3,7 +3,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-image: radial-gradient(
-    rgba(0, 150, 0, 0.75), black 120%);
+    rgba(4, 79, 4, 0.75), black 120%);
 	height: 100vh;
 	font: 1rem Inconsolata, monospace;
 }
@@ -30,6 +30,8 @@ input#tinput {
 	display: table-cell;
 	color: white;
 	text-shadow: 0 0 5px #C8C8C8;
+	font: 1rem Inconsolata, monospace;
+	margin-left: 3px;
 
 }
 
