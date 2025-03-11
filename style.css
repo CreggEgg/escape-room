@@ -2,8 +2,9 @@
 body {
 	display: flex;
 	flex-direction: column;
-	background-image: radial-gradient(
-    rgba(4, 79, 4, 0.75), black 120%);
+	background: linear-gradient(to top, #000000, #000000, #114b1b, #056b0f);
+	background-size: cover;
+	background-size: 100% 2px;
 	height: 100vh;
 	font: 1rem Inconsolata, monospace;
 }
@@ -33,5 +34,9 @@ input#tinput {
 	font: 1rem Inconsolata, monospace;
 	margin-left: 3px;
 
+}
+
+input#tinput:focus {
+	outline: none;
 }
 
