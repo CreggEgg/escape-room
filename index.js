@@ -1,4 +1,4 @@
-const code = "PASSWORD"
+const code = "SPICES"
 let downloaded = false
 
 document.querySelector("#tinput").focus({
@@ -26,7 +26,7 @@ document.querySelector("#tinput").addEventListener("keyup", function(event) {
 				log("Alright we get it you're very funny please just type y.")
 			}
 
-		} else if (event.target.value == code) {
+		} else if (event.target.value.toUpperCase() == code) {
 			
 			log("Successful log in")
 			setTimeout(() => {
